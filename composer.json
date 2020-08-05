@@ -1,0 +1,22 @@
+{
+    "name": "weerd/php-styles-config",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Lorenzo",
+            "email": "diego@diegolorenzo.com",
+            "homepage": "http://diegolorenzo.com"
+        }
+    ],
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "files": [
+            "./src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
