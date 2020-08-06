@@ -1,0 +1,10 @@
+<?php
+
+use PhpCsFixer\Finder;
+
+$finder = Finder::create()
+    ->in([
+        __DIR__.'/src',
+    ]);
+
+return Weerd\PhpStyle\configure($finder);

@@ -19,5 +19,8 @@
         ]
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    }
 }
