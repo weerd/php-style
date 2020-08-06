@@ -22,6 +22,8 @@ Below are some examples along with variations utilizing the `$options` array:
 
 ### Example using default ruleset
 
+The following example returns a configuration with the [default](https://github.com/weerd/php-style/blob/master/src/rules/default.php) rules for PHP styles.
+
 ```php
 <?php
 
@@ -36,7 +38,9 @@ $finder = Finder::create()
 return Weerd\PhpStyle\configure($finder);
 ```
 
-### Example using default ruleset and passing additional rules
+### Example using default ruleset and additional rules
+
+The following example returns a configuration with the [default](https://github.com/weerd/php-style/blob/master/src/rules/default.php) rules, along with two additional rules included in the final set of rules for PHP styles.
 
 ```php
 <?php
@@ -61,6 +65,8 @@ return Weerd\PhpStyle\configure($finder, $options);
 ```
 
 ### Example using laravel ruleset
+
+The following example returns a configuration with the [laravel](https://github.com/weerd/php-style/blob/master/src/rules/laravel.php) rules for PHP styles.
 
 ```php
 <?php
