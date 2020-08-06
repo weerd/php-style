@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": "^7.1.0",
         "friendsofphp/php-cs-fixer": "^2.16"
     },
     "autoload": {
