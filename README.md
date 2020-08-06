@@ -51,8 +51,7 @@ $finder = Finder::create()
     ->in([
         __DIR__.'/src',
         __DIR__.'/tests',
-    ])
-    ->notName('*.blade.php');
+    ]);
 
 $options = [
   'rules' => [
