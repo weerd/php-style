@@ -1,4 +1,4 @@
-<h1 align="center">✨PHP Styles ✨</h1>
+<h1 align="center">✨ PHP Styles ✨</h1>
 
 This package provides a simple way to apply pre-configured base style rules for the [PHP Code Standards Fixer tool](https://cs.symfony.com/), that can be easily shared across projects and packages using PHP 7+.
 
