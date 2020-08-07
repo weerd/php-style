@@ -16,7 +16,7 @@ use Symfony\Component\Finder\Finder as BaseFinder;
  */
 function configure(Finder $finder, array $options = []): Config
 {
-    $base = $options['base'] ?? 'default';
+    $base = $options['base'] ?? 'default'
   
     $rules = $options['rules'] ?? [];
 
