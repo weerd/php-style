@@ -2,10 +2,10 @@
 
 namespace Weerd\PhpStyle;
 
-use Exception;
 use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 use Symfony\Component\Finder\Finder as BaseFinder;
+use Exception;
 
 /**
  * Configuration for the PHP Code Standards Fixer tool.
@@ -16,7 +16,7 @@ use Symfony\Component\Finder\Finder as BaseFinder;
  */
 function configure(Finder $finder, array $options = []): Config
 {
-    $base = $options['base'] ?? 'default'
+    $base = $options['base'] ?? 'default';
   
     $rules = $options['rules'] ?? [];
 
