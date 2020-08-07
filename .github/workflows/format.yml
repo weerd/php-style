@@ -1,0 +1,19 @@
+name: Check code style format
+
+on: [push]
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+    name: "PHP CS Fixer"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fix style
+        uses: docker://oskarstark/php-cs-fixer-ga
+        with:
+          args: --config=.php_cs --allow-risky=yes --dry-run
+
+      
