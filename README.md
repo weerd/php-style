@@ -87,7 +87,7 @@ return Weerd\PhpStyle\configure($finder, ['base' => 'laravel']);
 
 ## Credits
 
-🙌 Thanks to [@Spatie](https://github.com/spatie) and their [Laravel Package Training](https://laravelpackage.training/) course for opening my eyes and introducing me to the PHP Code Standards Fixer tool and how to use it!
+🙌 Thanks to [@Spatie](https://github.com/spatie) and their [Laravel Package Training](https://laravelpackage.training/) course for introducing me to the PHP Code Standards Fixer tool and how to use it!
 
 🙌 This package is heavily inspired by [@timacdonald's](https://github.com/timacdonald) great article on [how to share PHP CS Fixer rules](https://laravel-news.com/sharing-php-cs-fixer-rules-across-projects-and-teams)!
 
