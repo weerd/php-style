@@ -1,0 +1,27 @@
+name: Check code style format
+
+on: [push, pull_request]
+
+jobs:
+  style:
+    name: "PHP CS Fixer"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.1'
+          coverage: none
+
+      - name: Install dependencies
+        run: composer update --prefer-dist --no-interaction --no-suggest
+
+      - name: List versions of installed depedencies
+        run: composer show
+      
+      - name: Check code style
+        run: vendor/bin/php-cs-fixer fix --dry-run --no-interaction --verbose
