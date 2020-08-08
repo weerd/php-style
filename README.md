@@ -96,7 +96,8 @@ Or to make things easier, add that command to the `composer.json` file as a scri
 ```json
 // composer.json
 {
-    // other composer stuff...
+    ...
+    
     "scripts": {
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     }
