@@ -85,6 +85,31 @@ $finder = Finder::create()
 return Weerd\PhpStyle\configure($finder, ['base' => 'laravel']);
 ```
 
+Once you have the `.php_cs.dist` file setup, you can run the PHP CS Fixer tool by running:
+
+```bash
+$ vendor/bin/php-cs-fixer fix --allow-risky=yes
+```
+
+Or to make things easier, add that command to the `composer.json` file as a script:
+
+```json
+// composer.json
+{
+    // other composer stuff...
+    "scripts": {
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    }
+}
+```
+
+Now you can run the PHP CS Fixer tool with the following composer command:
+
+```bash
+$ composer format
+```
+
+
 ## Credits
 
 🙌 Thanks to [@Spatie](https://github.com/spatie) and their [Laravel Package Training](https://laravelpackage.training/) course for introducing me to the PHP Code Standards Fixer tool and how to use it!
