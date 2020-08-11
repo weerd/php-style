@@ -1,6 +1,6 @@
 {
     "name": "weerd/php-style",
-    "description": "",
+    "description": "Shareable pre-configured base style rules for the PHP Code Standards Fixer tool.",
     "license": "MIT",
     "authors": [
         {
