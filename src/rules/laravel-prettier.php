@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Ruleset for Laravel projects.
+ * Ruleset for Laravel projects also using Prettier PHP plugin.
  * 
  * @see https://git.io/JJASj
  */
@@ -24,7 +24,7 @@ return [
   ],
   'class_definition' => true,
   'concat_space' => [
-      'spacing' => 'none',
+      'spacing' => 'one',
   ],
   'declare_equal_normalize' => true,
   'elseif' => true,
@@ -66,7 +66,7 @@ return [
   'no_mixed_echo_print' => [
       'use' => 'echo',
   ],
-  'no_multiline_whitespace_around_double_arrow' => true,
+  'no_multiline_whitespace_around_double_arrow' => false,
   'multiline_whitespace_before_semicolons' => [
       'strategy' => 'no_multi_line',
   ],
@@ -85,7 +85,7 @@ return [
   'no_whitespace_before_comma_in_array' => true,
   'no_whitespace_in_blank_line' => true,
   'normalize_index_brace' => true,
-  'not_operator_with_successor_space' => true,
+  'not_operator_with_successor_space' => false,
   'object_operator_without_whitespace' => true,
   'ordered_imports' => ['sortAlgorithm' => 'alpha'],
   'phpdoc_indent' => true,

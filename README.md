@@ -28,6 +28,7 @@ The following example returns a configuration with the [default](https://github.
 <?php
 
 use PhpCsFixer\Finder;
+use function Weerd\PhpStyle\configure;
 
 $finder = Finder::create()
     ->in([
@@ -35,7 +36,7 @@ $finder = Finder::create()
         __DIR__.'/tests',
     ]);
 
-return Weerd\PhpStyle\configure($finder);
+return configure($finder);
 ```
 
 ### Example using default ruleset and additional rules
@@ -46,6 +47,7 @@ The following example returns a configuration with the [default](https://github.
 <?php
 
 use PhpCsFixer\Finder;
+use function Weerd\PhpStyle\configure;
 
 $finder = Finder::create()
     ->in([
@@ -60,7 +62,7 @@ $options = [
   ],
 ];
 
-return Weerd\PhpStyle\configure($finder, $options);
+return configure($finder, $options);
 ```
 
 ### Example using laravel ruleset
@@ -71,6 +73,7 @@ The following example returns a configuration with the [laravel](https://github.
 <?php
 
 use PhpCsFixer\Finder;
+use function Weerd\PhpStyle\configure;
 
 $finder = Finder::create()
     ->in([
@@ -82,7 +85,7 @@ $finder = Finder::create()
     ])
     ->notName('*.blade.php');
 
-return Weerd\PhpStyle\configure($finder, ['base' => 'laravel']);
+return configure($finder, ['base' => 'laravel']);
 ```
 
 Once you have the `.php_cs.dist` file setup, you can run the PHP CS Fixer tool by running:

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Default ruleset for PHP projects.
+ * Default ruleset for PHP projects also using Prettier PHP plugin.
  */
 return [
   '@PSR2' => true,
@@ -15,7 +15,7 @@ return [
     'keep_multiple_spaces_after_comma' => true,
   ],
   'no_unused_imports' => true,
-  'not_operator_with_successor_space' => true,
+  'not_operator_with_successor_space' => false,
   'ordered_imports' => ['sortAlgorithm' => 'alpha'],
   'phpdoc_scalar' => true,
   'phpdoc_single_line_var_spacing' => true,
