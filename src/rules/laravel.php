@@ -2,7 +2,7 @@
 
 /**
  * Ruleset for Laravel projects.
- * 
+ *
  * @see https://git.io/JJASj
  */
 return [

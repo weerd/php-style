@@ -2,7 +2,7 @@
 
 /**
  * Ruleset for Laravel projects also using Prettier PHP plugin.
- * 
+ *
  * @see https://git.io/JJASj
  */
 return [
